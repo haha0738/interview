@@ -207,6 +207,29 @@
 	<br>
 	<br>
 	<br>
+6. 請問 `stack` 和 `queue` 的差別是什麼？
+
+	<br>
+	<br>
+	<br>
+	<br>
+   
+7. 請問什麼是 `binary tree`？
+	<br>
+	<br>
+	<br>
+	<br><br>
+	<br>
+	<br>
+	<br>
+8. 請問 `binary search` 的原理是什麼？
+	<br>
+	<br>
+	<br>
+	<br><br>
+	<br>
+	<br>
+	<br>
 	
 ## HTML
 
