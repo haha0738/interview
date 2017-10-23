@@ -218,8 +218,7 @@
 ### 資料結構
 
 1. 試著解釋 `Stack`、`Queue`和 `Linked List`
-
-<br>
+	<br>
 	<br>
 	<br>
 	<br>
@@ -229,13 +228,25 @@
 	<br>
 	<br>
 2. 請列舉常見的資料排序方法，並從中挑選一個嘗試解釋它的排序方法。
-	
 	<br>
 	<br>
 	<br>
 	<br>
-	<br><br>
 	<br>
 	<br>
 	<br>
 	<br>
+	<br>
+	<br>
+3. 請嘗試說明一下 binary tree，並請說明他可以有哪些用途。
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
