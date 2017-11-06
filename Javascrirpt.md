@@ -1,4 +1,4 @@
-# 網頁前端
+# 艾法諾科技 - 網頁前端面試考題
 
 應試人：
 
@@ -30,7 +30,7 @@
 ## Javascript
 ### 基本測驗
 
-1. 1 == '1' 和 1 === '1' 的結果為何？
+1. What is the difference between 1 == '1' and 1 === '1' ？
 
 	<br>
 	<br>
@@ -38,7 +38,7 @@
 	<br>
 		
 	
-2. 請問下列 b 輸出的值是什麼？
+2. wthat is the output？
 
 	``` javascript
 	var a = [1,2,3];
@@ -50,125 +50,45 @@
 	<br>
 	<br>
 	<br>
-3. 請問如何從以下程式碼取得 `hello` 這個字串
+	
+3. How to get the string `hello` ?
 
 	``` javascript
 	var a = { 1: 'hello', 2: 'world' };
 	```
-<br>
-	<br>
-	<br>
-	<br>
-4. 請問下列程式碼分別輸出的結果
-	
-	``` javascript 
-	typeof function(){};
-	typeof [];
-	typeof {};
-	typeof new FormData();
-	```
 	<br>
 	<br>
 	<br>
 	<br>
-5.  請問 `setTimeout` 和 `setInterval` 的差別
-	<br>
-	<br>
-	<br>
-	<br>
+
 	
 ### 進階題
+1. Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.
 
-1. 請問以下輸出的結果會是什麼？
+	You may assume that each input would have **exactly** one solution, and you may not use the same element twice.
+	
+	**Example:**
+	
+	```javascript
+	Given nums = [2, 7, 11, 15], target = 9,
 
-	``` javascript
-	if(true) {
-		function foo(){
-			return 'a';
-		}
-	}
-	else{
-		function foo(){
-			return 'b';
-		}
-	}
-	
-	console.log(foo());
+	Because nums[0] + nums[1] = 2 + 7 = 9,
+	return [0, 1].
 	```
-	<br>
-	<br>
-	<br>
-	<br>	
-2. 請問以下輸出的結果會是什麼？
 	
-	``` javascript
-	function foo(){
-		foo.bar = function(){
-			console.log('abc');
-		};
-		
-		this.bar = function(){
-			console.log('def');
-		}
-		
-		var bar = function(){
-			console.log('ghi');
-		}
-		
-	}
+	**Solution**
 	
-	foo.prototype.bar = function(){
-		console.log('xyz');
-	}
+	```javascript
+	/**
+	 * @param {number[]} nums
+	 * @param {number} target
+	 * @return {number[]}
+	 */
+	var twoSum = function(nums, target) {
 	
-	var f = new foo();
-	f.bar();
-	foo.bar();
-	bar();
+	};
 	```
-	<br>
-	<br>
-	<br>
-	<br>
 	
-3. 請問以下輸出的結果是什麼？
-	
-	``` javascript 
-	$('foo').click(function(e){
-		console.log(this);
-		setTimeout(function(){
-			console.log(this);
-		}, 1000);
-	});
-	```
-	<br>
-	<br>
-	<br>
-	<br>
-	
-4. 有個 array 如下，請實作 reverse 和 join
-	
-	``` javascript
-	var a = [1,2,3];
-	console.log(a.reverse().join(',')); // 輸出 "3,2,1"
-	console.log(a); //輸出 "1,2,3"
-	```
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
 	<br>
 	<br>
 	<br>
@@ -178,62 +98,43 @@
 	<br>
 	<br>
 	
-5. 請試著寫一個程式算出 `100!` (1 * 2 * 3 * ..... * 99 * 100) 後面有幾個零。
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-6. 請問 `stack` 和 `queue` 的差別是什麼？
+	
+2. Given an integer, convert it to a roman numeral.
 
+	Input is guaranteed to be within the range from 1 to 3999.
+	
+	**Solution**
+	
+	```javascript
+	/**
+	 * @param {number} num
+	 * @return {string}
+	 */
+	var intToRoman = function(num) {
+	    
+	};
+	```
 	<br>
 	<br>
 	<br>
 	<br>
-   
-7. 請問什麼是 `binary tree`？
 	<br>
 	<br>
 	<br>
-	<br><br>
 	<br>
 	<br>
 	<br>
-8. 請問 `binary search` 的原理是什麼？
 	<br>
 	<br>
 	<br>
-	<br><br>
 	<br>
 	<br>
 	<br>
+
 	
 ## HTML
 
-1. 什麼是`inline element`？什麼是 `block element`？什麼是 `void element`？
+1. Try to explain `inline element` 、 `block element` and `void element`？
 	<br>
 	<br>
 	<br>
@@ -241,34 +142,21 @@
 	<br>
 	<br>
 
-2. 請問 script 放在 head 和 body 的差別是？該如何決定是要放在 body 還是 head？
+3. Try to explain `cookie` `session` `localStorage` and `sessionStorage`.
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
-3. 請說明 `cookie` `session` `localStorage` `sessionStorage` 的差別。
+4. What is  `Doctype`？
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
-4. 請問 `Doctype` 的作用是什麼？
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-5. 載入 css 時，請問使用`link` 和 `@import` 的差別是？
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+
 	
 # CSS
 1. 請問 `css selector` 有哪些？

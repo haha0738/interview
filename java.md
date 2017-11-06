@@ -1,4 +1,4 @@
-# 磊德資訊JAVA面試考題
+# 艾法諾科技 - JAVA面試考題
 
 > 應試人：
 > 
@@ -10,154 +10,84 @@
 
 
 ## 考題
+> 請將答案另外寫在空白紙上
 
-1. GC是什麼? 為什麼要有GC? 
+1. Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice.
 	
-	<br>
-	<br>
-	<br>
-	<br>
+	**example:**
 	
-2. abstract class和interface有什麼區別? 
-	<br>
-	<br>
-	<br>
-	<br>
-
-3. 介面是否可繼承介面? 抽象類是否可實現(implements)介面? 抽象類別是否可繼承實體類別(concrete class)? 
-	<br>
-	<br>
-	<br>
-	<br>
+	```text
+	Given nums = [2, 7, 11, 15], target = 9,
+	
+	Because nums[0] + nums[1] = 2 + 7 = 9,
+	return [0, 1].
+```
 
 
-6. 什麼是call by value 和 call by reference。
-	<br>
-	<br>
-	<br>
-	<br>
+1. Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
 
-7. 你知道哪些design pattern？試著寫出Singleton pattern。
-	<br>
-	<br>
-	<br>
-	<br>
-
-8. 請問 `thread` 和 `process` 的差別是，以及為何要使用 `thead pool 模式`？
-	<br>
-	<br>
-	<br>
-	<br>
-
-8. 請解釋 `final` 、 `static` 和 `final static` 
-	<br>
-	<br>
-	<br>
-	<br>
-
-9. a == b 和 a.equals(b) 有什麼差別？
-	<br>
-	<br>
-	<br>
-	<br>
-
-10. 什麼是memory leak？如何避免？
-	<br>
-	<br>
-	<br>
-	<br>
-
-11. StringBuffer跟StringBuilder的比較
-	<br>
-	<br>
-	<br>
-	<br>
-
-5. 請用sql語法寫出增刪改查。
-	<br>
-	<br>
-	<br>
-	<br>
-
-6. 請問什麼是資料庫正規化？一般做到第幾正規化，以及原因。
-	<br>
-	<br>
-	<br>
-	<br>
-
-9. 請問什麼是SQL injection，該如何避免？
-	<br>
-	<br>
-	<br>
-	<br>
-
-10. 請用程式寫出可以計算`費氏數列`的function，以下為`費氏數列`的定義。
-
+	
+	**Solution:**
+	
+	```java
+	class Solution {
+	    public String intToRoman(int num) {
+	        
+	    }
+	}
 	```
-	f(0) = 0
-	f(1) = 1
-	f(n) = f(n-1) + f(n-2) (n >= 2)
+	
+1. You are given an n x n 2D matrix representing an image.
+
+	Rotate the image by 90 degrees (clockwise).
+
+	**Note:**
+	You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
+	
+	**Example 1:**
+	
 	```
-	<br>
-	<br>
-	<br>
-	<br>
+	Given input matrix = 
+	[
+	  [1,2,3],
+	  [4,5,6],
+	  [7,8,9]
+	],
+	
+	rotate the input matrix in-place such that it becomes:
+	[
+	  [7,4,1],
+	  [8,5,2],
+	  [9,6,3]
+	]
+	```
+	**Example 2:**
+	
+	```
+	Given input matrix =
+	[
+	  [ 5, 1, 9,11],
+	  [ 2, 4, 8,10],
+	  [13, 3, 6, 7],
+	  [15,14,12,16]
+	], 
+	
+	rotate the input matrix in-place such that it becomes:
+	[
+	  [15,13, 2, 5],
+	  [14, 3, 4, 1],
+	  [12, 6, 8, 9],
+	  [16, 7,10,11]
+	]
+	```
+	
+	**Solution:**
+	
+	```java
+	class Solution {
+	    public void rotate(int[][] matrix) {
+	        
+	    }
+	}
+	```
 
-
-
-13. 假設有一長度為N-1的未排序的數列，裡面會有1到N的數字，但是必定會缺少其中一個數字，例如[5,1,2,4]。請想出一個最快又節省記憶體的方式，找出缺少的數字。
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-14. 請試著解釋 `queue` 、 `stack` 和 `linked list`。
-
-<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>	
-15. 請列舉常用的排序方法，並挑選其一解釋其原理。
-
-<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-16. 請問`binary search`的原理是什麼？並嘗試用程式寫出來（不限何種程式語言）。
-
-<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
