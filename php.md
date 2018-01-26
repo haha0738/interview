@@ -1,252 +1,157 @@
 # 艾法諾科技 - PHP面試考題
 
-- 應試人：
-
-- 應試日期：
-
-- 面試官：
-
-- 分數：
+> 應試人：
+> 
+> 面試日期：
+> 
+> 主考官：
+> 
+> 分數：
 
 
 ## 考題
-
-### 資料庫
-
-3. 如何避免mysql race condition。
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	
-
-4. 請問什麼是MVC架構，你知道有哪些 framework 是採用 MVC 架構的？
-	
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
-6. 請問什麼是資料庫正規化？一般做到第幾正規化，以及原因。
-	
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
-16. 資料庫用index為何可以增加查詢的效能？過度使用index又會有什麼影響？
-	
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	
-17. 請問在Mysql中 `primary key`, `index`, `unique`的差別是什麼？
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
+> 請將答案另外寫在空白紙上
 
 ### PHP
+1. Write a function that takes a string as input and returns the string reversed.
 
-
-8. 請問什麼是RESTful。
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
-9. 請問什麼是SQL injection，該如何避免？
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
-
-10. 請寫出可以計算`費氏數列`的function，以下為`費氏數列`的定義。
-
-	```
-	f(0) = 0
-	f(1) = 1
-	f(n) = f(n-1) + f(n-2) (n >= 2)
-	```
+	**Example:**
+	Given s = "hello", return "olleh".
 	
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
 
-
-12. 什麼是call by value 和 call by reference。
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
-14. 假設有一長度為N-1的未排序的數列，裡面會有1到N的數字，但是必定會缺少其中一個數字，例如[5,1,2,4]。請想出一個最快又節省記憶體的方式，找出缺少的數字。
-	
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+1. Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
 
 	
-17. 請問以下程式碼的執行結果是什麼？
-	
-	``` php
-	interface Animal
-	{
-		function move();
-	}
-	
-	abstract class Bird implement Animal
-	{
-		public function move()
-		{
-			echo 'fly';
-		}
-	}
-	
-	class Starling extends Bird
-	{
-	
-	}
-	
-	class Ostrich extends Bird
-	{
-		public function move()
-		{
-			echo 'walk';
-		]
-	}
-	$starling = new Starling();
-	$starling->move();
-	
-	$ostrich = new Ostrich();
-	$ostrich->move();
-	
-	$bird = new Bird();
-	$bird->move();
-	
-	$animal = new Animal();
-	$animal->move();
-	```
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
-
-1. 請問以下輸出結果會是什麼？
-
-	``` php
-	<?php
-	$datas = [
-		['姓名', '成績', '學號'],
-		['大雄', 0, '00653'],
-		['靜香', 100, '00655'],
-		['胖虎', 50, '00659'],
-		['小夫', 60, '00651'],
-	]; 
-	
-	$output = [];
-	foreach ($datas as $data) {
-		$output[] = implode(",\t", $data);
-	}
-	
-	echo implode("\r\n", $output);
-	
-	```
-	<br>
-	<br>
-	<br>
-	<br>
-	<br><br>
-	<br>
-	<br>
-	<br>
-	<br>
-	
-1. 試著寫一個 `parse_url` function 可以將`註1`的連結用`註2`的格式回傳(不可使用內建 function)
-	
-	\[註1\]
-	
-	```
-	https://admin:pass@localhost:8080/path/to/somewhere?q=query#fragment 
-	```
-	
-	\[註2\]
+	**Solution:**
 	
 	```php
+	class Solution {
+		/**
+     	* @param int $num Number to be converted
+     	*
+     	* @return string Roman numeral
+     	*/
+		public function intToRoman($num) {
+		    
+		}
+	}
+	```
+	
+1. You are given an n x n 2D matrix representing an image.
+
+	Rotate the image by 90 degrees (clockwise).
+
+	**Note:**
+	You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
+	
+	**Example 1:**
+	
+	```
+	Given input matrix = 
 	[
-		'scheme' => 'https',
-		'host' => 'localhost',
-		'port' => '8080',
-		'user' => 'admin'
-		'pass' => 'pass',
-		'path' => 'path/to/somewhere',
-		'query' => 'q=query',
-		'fragment' => 'fragment'
+	  [1,2,3],
+	  [4,5,6],
+	  [7,8,9]
+	],
+	
+	rotate the input matrix in-place such that it becomes:
+	[
+	  [7,4,1],
+	  [8,5,2],
+	  [9,6,3]
+	]
+	```
+	**Example 2:**
+	
+	```
+	Given input matrix =
+	[
+	  [ 5, 1, 9,11],
+	  [ 2, 4, 8,10],
+	  [13, 3, 6, 7],
+	  [15,14,12,16]
+	], 
+	
+	rotate the input matrix in-place such that it becomes:
+	[
+	  [15,13, 2, 5],
+	  [14, 3, 4, 1],
+	  [12, 6, 8, 9],
+	  [16, 7,10,11]
 	]
 	```
 	
+	**Solution:**
 	
-	<br>
-	<br>
-	<br>
-	<br>
-	<br><br>
-	<br>
-	<br>
-	<br>
-	<br>
+	```java
+	class Solution {
+		/**
+     	* @param array $matrix 2D matrix
+     	*
+     	* @return array Rotated 2D matrix by 90 degrees(clockwise)
+     	*/
+    	public function rotate(array $matrix) {
+        
+    	}
+	}
+	```
+	
+### DATABASE
 
-### 資料結構
+1. Table: `Person`
+ 
+	```
+	+-------------+---------+
+	| Column Name | Type    |
+	+-------------+---------+
+	| PersonId    | int     |
+	| FirstName   | varchar |
+	| LastName    | varchar |
+	+-------------+---------+
+	PersonId is the primary key column for this table.
+	```
+	
+	Table: `Address`
+	
+	```
+	+-------------+---------+
+	| Column Name | Type    |
+	+-------------+---------+
+	| AddressId   | int     |
+	| PersonId    | int     |
+	| City        | varchar |
+	| State       | varchar |
+	+-------------+---------+
+	AddressId is the primary key column for this table.
+	```
+	
+	Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:
+	
+	```
+	FirstName, LastName, City, State
+	```
 
-1. 試著解釋 `Stack`、`Queue`和 `Linked List`
-	<br>
-	<br>
-	<br>
-	<br>
-	<br><br>
-	<br>
-	<br>
-	<br>
-	<br>
-2. 請列舉常見的資料排序方法，並從中挑選一個嘗試解釋它的排序方法。
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-3. 請嘗試說明一下 binary tree，並請說明他可以有哪些用途。
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+1. Write a SQL query to delete all duplicate email entries in a table named `Person`, keeping only unique emails based on its smallest Id.
+  
+   ```
+	+----+------------------+
+	| Id | Email            |
+	+----+------------------+
+	| 1  | john@example.com |
+	| 2  | bob@example.com  |
+	| 3  | john@example.com |
+	+----+------------------+
+	Id is the primary key column for this table.
+	```
+	
+	For example, after running your query, the above Person table should have the following rows:
+	
+	```
+	+----+------------------+
+	| Id | Email            |
+	+----+------------------+
+	| 1  | john@example.com |
+	| 2  | bob@example.com  |
+	+----+------------------+
+	```
 
