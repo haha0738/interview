@@ -19,20 +19,34 @@
 	Given s = "hello", return "olleh".
 	
 
-1. Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
-
+1. Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+	
+	**Examples:**
+	
+	```
+	s = "leetcode"
+	return 0.
+	
+	s = "loveleetcode",
+	return 2.
+	```
+	
+	**Note:** You may assume the string contain only lowercase letters.
+	
 	
 	**Solution:**
 	
 	```php
 	class Solution {
 		/**
-     	* @param int $num Number to be converted
+     	* @param String $str Input string
      	*
-     	* @return string Roman numeral
+     	* @return int The index of first non-repeating character
      	*/
-		public function intToRoman($num) {
-		    
+		class Solution {
+		    public function firstUniqChar($str) {
+		        
+		    }
 		}
 	}
 	```
