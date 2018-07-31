@@ -13,45 +13,46 @@
 > 請將答案另外寫在空白紙上
 
 ### PHP
+
 1. Write a function that takes a string as input and returns the string reversed.
 
 	**Example:**
 	Given s = "hello", return "olleh".
-	
 
-1. Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
-	
-	**Examples:**
-	
-	```
-	s = "leetcode"
-	return 0.
-	
-	s = "loveleetcode",
-	return 2.
-	```
-	
-	**Note:** You may assume the string contain only lowercase letters.
-	
-	
-	**Solution:**
-	
-	```php
-	class Solution {
-		/**
-     	* @param String $str Input string
-     	*
-     	* @return int The index of first non-repeating character
-     	*/
-		class Solution {
-		    public function firstUniqChar($str) {
-		        
-		    }
-		}
-	}
-	```
-	
-1. You are given an n x n 2D matrix representing an image.
+2. Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+
+  **Examples:**
+
+   ```javascript
+   s = "leetcode"
+   return 0.
+  
+   s = "loveleetcode",
+   return 2.
+   ```
+
+  **Note:** You may assume the string contain only lowercase letters.
+
+  **Solution:**
+
+```php
+class Solution {
+    /**
+    * @param String $str Input string
+    *
+    * @return int The index of first non-repeating character
+    */
+    class Solution {
+        public function firstUniqChar($str) {
+
+        }
+    }
+}
+```
+
+
+
+3. You are given an n x n 2D matrix representing an image.
 
 	Rotate the image by 90 degrees (clockwise).
 
@@ -97,7 +98,7 @@
 	
 	**Solution:**
 	
-	```java
+	```php
 	class Solution {
 		/**
      	* @param array $matrix 2D matrix
@@ -113,7 +114,7 @@
 ### DATABASE
 
 1. Table: `Person`
- 
+
 	```
 	+-------------+---------+
 	| Column Name | Type    |

@@ -3,7 +3,7 @@
 
 1. 請問以下輸出的結果會是什麼？
 
-	```
+	```javascript
 	if(true) {
 		function foo(){
 			return 'a';
@@ -20,7 +20,7 @@
 	
 2. 請問以下輸出的結果會是什麼？
 	
-	```
+	```javascript
 	var a = [1, 2, 3, 4];
 	var b = a;
 	a.push(5);
@@ -28,7 +28,7 @@
 	```
 3. 請問以下輸出的結果會是什麼？
 	
-	```
+	```javascript
 	function foo(){
 		foo.bar = function(){
 			console.log('abc');
@@ -55,7 +55,7 @@
 	```
 4. 請問以下的輸出結果是什麼？
 
-	```
+	```javascript
 	var a = function(){
 		return {
 			a: 'a'
