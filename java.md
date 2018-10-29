@@ -9,7 +9,7 @@
 > 分數：
 
 
-## 考題
+## 考題（程式題請不要使用內建函式作答，否則零分計。可以用pseudocode作答）
 > 請將答案另外寫在空白紙上
 
 1. Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -24,11 +24,16 @@ return [0, 1].
 ```
 
 
-2. You are given an n x n 2D matrix representing an image.
+2. Write a function that takes a string as input and returns the string reversed.
+
+    **Example:**
+    Given s = "hello", return "olleh".
+
+3. You are given an n x n 2D matrix representing an image.
     Rotate the image by 90 degrees (clockwise).
 
-  **Note:**
-  You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
+      **Note:**
+      	You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
 
   **Example 1:**
 
@@ -76,15 +81,15 @@ rotate the input matrix in-place such that it becomes:
 
 ```java
 class Solution {
-public void rotate(int[][] matrix) {
-
-}
+    public void rotate(int[][] matrix) {
+		
+    }
 }
 ```
 
-3. There is a table `courses` with columns: **student** and **class**
-Please list out all classes which have more than or equal to 5 students.
-For example, the table:
+4. There is a table `courses` with columns: **student** and **class**
+   Please list out all classes which have more than or equal to 5 students.
+   For example, the table:
 
 ```
 +---------+------------+

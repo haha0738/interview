@@ -1,4 +1,4 @@
-# SWIFT 考題
+# SWIFT 考題（程式題請不要使用內建函式作答，否則零分計。可以用pseudocode作答）
 
 1. **Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.**
 
